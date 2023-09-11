@@ -9,12 +9,12 @@ import org.junit.Test;
 public class RectangleTest {
 
     @Test
-    public void ShouldReturnAreAs100() {
+    public void ShouldReturnAreAs100WhenLengthIs10andBreadthIs10() {
 
-        final double len = 10;
-        final double bre = 10;
+        final double length = 10;
+        final double breadth = 10;
 
-        Rectangle rectangle = new Rectangle(len, bre);
+        Rectangle rectangle = new Rectangle(length,breadth);
         double result = rectangle.area();
 
         assertEquals(100, result);
@@ -22,12 +22,12 @@ public class RectangleTest {
     }
 
     @Test
-    public void ShouldReturnPerimeterAs20() {
+    public void ShouldReturnPerimeterAs20WhenLengthIs5andBreadthIs5() {
 
-        final double len = 5;
-        final double bre = 5;
+        final double length = 5;
+        final double breadth = 5;
 
-        Rectangle rectangle = new Rectangle(len, bre);
+        Rectangle rectangle = new Rectangle(length, breadth);
         double result = rectangle.perimeter();
 
         assertEquals(20, result);
